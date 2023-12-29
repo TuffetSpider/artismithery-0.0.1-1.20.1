@@ -2,6 +2,7 @@ package net.tuffetspider.artismithery;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tuffetspider.artismithery.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +13,9 @@ public class Artismithery implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		ModItems.registerModItems();
 
-		LOGGER.info("Hello Fabric world!");
+
+
 	}
 }
