@@ -16,7 +16,6 @@ public class ModItems {
     public static final Item ROCK_SHARD = registerItem("rock_shard", new Item(new FabricItemSettings()));
     public static final Item STONE_CHISEL = registerItem("stone_chisel", new Item(new FabricItemSettings()));
     public static final Item THROWING_ROCK = registerItem("throwing_rock", new RockItem(new FabricItemSettings()));
-    public static final Item STONE_SHARD = registerItem( "stone_shard", new RockItem(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(ROCK_SHARD);
