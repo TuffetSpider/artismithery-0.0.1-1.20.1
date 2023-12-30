@@ -11,6 +11,7 @@ import net.minecraft.network.packet.s2c.play.EntitySpawnS2CPacket;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.world.World;
+import net.minecraft.world.explosion.Explosion;
 import net.tuffetspider.artismithery.entity.ModEntities;
 import net.tuffetspider.artismithery.item.ModItems;
 
