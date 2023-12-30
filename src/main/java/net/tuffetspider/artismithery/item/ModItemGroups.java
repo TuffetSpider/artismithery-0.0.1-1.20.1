@@ -8,6 +8,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.tuffetspider.artismithery.Artismithery;
 import net.minecraft.registry.Registry;
+import net.tuffetspider.artismithery.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup Artismithery_Items = Registry.register(Registries.ITEM_GROUP,
@@ -15,6 +16,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.artismithery"))
                     .icon(() -> new ItemStack(ModItems.ROCK_SHARD)).entries((displayContext, entries) -> {
                         entries.add(ModItems.ROCK_SHARD);
+                        entries.add(ModBlocks.ARTISAN_TABLE);
+                        entries.add(ModItems.STONE_CHISEL);
 
     }).build());
 

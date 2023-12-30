@@ -15,6 +15,7 @@ import net.minecraft.registry.Registry;
 
 public class ModItems {
     public static final Item ROCK_SHARD = registerItem("rock_shard", new Item(new FabricItemSettings()));
+    public static final Item STONE_CHISEL = registerItem("stone_chisel", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(ROCK_SHARD);

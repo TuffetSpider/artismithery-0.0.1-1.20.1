@@ -1,4 +1,6 @@
 {
   "item.artismithery.rock_shard": "Rock Shard",
-  "itemgroup.artismithery": "Artismithery"
+  "itemgroup.artismithery": "Artismithery",
+  "block.artismithery.artisan_table":  "Artisan's table",
+  "item.artismithery.stone_chisel": "Stone Chisel"
 }
