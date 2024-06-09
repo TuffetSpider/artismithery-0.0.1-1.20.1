@@ -16,12 +16,12 @@ public class RockItem extends Item {
 
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
-        world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SNOWBALL_THROW, SoundCategory.NEUTRAL, 0.5f, 0.4f / (world.getRandom().nextFloat() * 0.4f + 0.8f));
+        world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_SPLASH_POTION_THROW, SoundCategory.NEUTRAL, 0.5f, 0.4f / (world.getRandom().nextFloat() * 0.4f + 0.8f));
 
         if (!world.isClient) {
             RockShardProjectileEntity rockShardProjectileEntity = new RockShardProjectileEntity(user, world);
             rockShardProjectileEntity.setItem(itemStack);
-            rockShardProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.5f, 1.0f);
+            rockShardProjectileEntity.setVelocity(user, user.getPitch(), user.getYaw(), 1.0f, 1.5f, 1.0f);
             world.spawnEntity(rockShardProjectileEntity);
         }
 
@@ -29,6 +29,5 @@ public class RockItem extends Item {
             itemStack.decrement(1);
         }
         return TypedActionResult.success(itemStack, world.isClient());
-    }
-}
+    }}
 

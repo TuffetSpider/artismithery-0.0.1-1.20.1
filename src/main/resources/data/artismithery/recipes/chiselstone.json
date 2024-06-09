@@ -3,7 +3,7 @@
   "category": "equipment",
   "ingredients": [
     {
-      "item": "artismithery:rock_shard"
+      "item": "artismithery:rock"
     },
     {
       "item": "minecraft:stick"

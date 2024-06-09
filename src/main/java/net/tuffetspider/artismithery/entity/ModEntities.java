@@ -10,12 +10,12 @@ import net.minecraft.util.Identifier;
 import net.tuffetspider.artismithery.Artismithery;
 import net.tuffetspider.artismithery.entity.custom.RockShardProjectileEntity;
 
-import javax.swing.text.html.parser.Entity;
+
 
 public class ModEntities {
 
-    public static final EntityType<RockShardProjectileEntity> ROCK_PROJECTILE = Registry.register(Registries.ENTITY_TYPE,
-            new Identifier(Artismithery.MOD_ID, "rock_projectile"), FabricEntityTypeBuilder.<RockShardProjectileEntity>create(SpawnGroup.MISC, RockShardProjectileEntity::new)
+    public static final EntityType<RockShardProjectileEntity> ROCKITEM = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(Artismithery.MOD_ID, "rockitem"), FabricEntityTypeBuilder.<RockShardProjectileEntity>create(SpawnGroup.MISC, RockShardProjectileEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
 
 

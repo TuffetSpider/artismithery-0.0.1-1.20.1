@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ARTISAN_TABLE);
                         entries.add(ModItems.STONE_CHISEL);
 
+
     }).build());
 
 

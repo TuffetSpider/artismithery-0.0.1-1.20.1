@@ -19,6 +19,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.THROWING_ROCK, Models.GENERATED);
+    itemModelGenerator.register(ModItems.ROCK_SHARD, Models.GENERATED);
     }
 }
