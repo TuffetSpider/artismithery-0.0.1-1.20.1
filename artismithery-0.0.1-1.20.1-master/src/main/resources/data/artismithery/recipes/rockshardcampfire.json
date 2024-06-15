@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "cookingtime": 800,
+  "experience": 1,
+  "ingredient": {
+    "item": "minecraft:cobblestone"
+  },
+  "result": "artismithery:rock"
+}
