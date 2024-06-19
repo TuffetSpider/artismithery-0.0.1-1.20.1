@@ -25,7 +25,6 @@ public class TeleporterBlock extends Block {
             // Define the paramaters of the target block
             final Predicate<BlockPos> predicate = blockPos -> world.getBlockState(blockPos).getBlock() == Blocks.REDSTONE_LAMP;
 
-            // Find closest valid target block to teleport to
             Optional<BlockPos> teleportLocation = BlockPos.findClosest(pos, 15, 1, predicate);
 
             if (teleportLocation.isPresent()) {
